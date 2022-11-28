@@ -24,12 +24,12 @@ struct Workshop_TemplateApp: App {
             //  MARK:         CORE MOTION
             //                        CoreMotionView()
             //  MARK:         GENERIC VIEW
-            //            GenericView()
+            //                        GenericView()
             
             
             //  MARK: -------- DESIGN --------
             //  MARK:         STYLEGUIDE - DARKMODE
-            //                        StyleGuideView()
+            StyleGuideView()
             //  MARK:         TRANSITIONS AND MATCHGEOMERY
             //                        TransitionView()
             //                        MatchGeometryView()
@@ -42,7 +42,7 @@ struct Workshop_TemplateApp: App {
             
             
             //  MARK: -------- PRACTICE --------
-            ContentView()
+            //                        ContentView()
         }
     }
 }

@@ -5,11 +5,12 @@
 //  Created by Bryan Caro on 25/11/22.
 //
 
-import Foundation
 import SwiftUI
 
 class StateObservableObjectViewModel: ObservableObject {
     //  MARK: - Published
+    @Published private(set) var count = 0
+    private(set) var countSignal = 0
     //  MARK: - Constants
     //  MARK: - Lifecycle
     init() {}
@@ -22,5 +23,13 @@ class StateObservableObjectViewModel: ObservableObject {
     
     func onDisappear() {}
     
-    //  MARK: - API Calls
+    //  MARK: - Action
+    func incrementCounter() {
+        count += 1
+    }
+    
+    func incrementCounterWithSignal() {
+        countSignal += 1
+        objectWillChange.send()
+    }
 }

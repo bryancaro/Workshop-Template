@@ -16,9 +16,12 @@ struct EnvironmentView: View {
     //  MARK: - Principal View
     var body: some View {
         ZStack {
-            
+            TabView {
+                StateObservableObjectView()
+            }
         }
         .onAppear(perform: vm.onAppear)
+        .environmentObject(vm)
     }
     //  MARK: - Properties
 }

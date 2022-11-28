@@ -5,11 +5,11 @@
 //  Created by Bryan Caro on 25/11/22.
 //
 
-import Foundation
 import SwiftUI
 
 class EnvironmentViewModel: ObservableObject {
     //  MARK: - Published
+    @Published var message: String = "Hello team!"
     //  MARK: - Constants
     //  MARK: - Lifecycle
     init() {}
@@ -22,5 +22,8 @@ class EnvironmentViewModel: ObservableObject {
     
     func onDisappear() {}
     
-    //  MARK: - API Calls
+    //  MARK: - Actions
+    func getRandomUUID() -> String {
+        UUID().uuidString
+    }
 }

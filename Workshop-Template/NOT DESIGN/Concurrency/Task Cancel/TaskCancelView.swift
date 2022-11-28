@@ -4,7 +4,22 @@
 //
 //  Created by Bryan Caro on 25/11/22.
 //
+
 import SwiftUI
+
+struct TaskCancelMainView: View {
+    var body: some View {
+        ZStack {
+            NavigationView {
+                NavigationLink {
+                    TaskCancelView()
+                } label: {
+                    Text("Go to next view")
+                }
+            }
+        }
+    }
+}
 
 struct TaskCancelView: View {
     //  MARK: - Environment
@@ -15,9 +30,17 @@ struct TaskCancelView: View {
     //  MARK: - Principal View
     var body: some View {
         ZStack {
-            
+            if let image = vm.image {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 200, height: 200)
+                    .mask(RoundedRectangle(cornerRadius: 30))
+                    .shadow(color: Color.black.opacity(0.4), radius: 12, x: 20, y: 20)
+            }
         }
         .onAppear(perform: vm.onAppear)
+        .onDisappear(perform: vm.onDisappear)
     }
     //  MARK: - Properties
 }

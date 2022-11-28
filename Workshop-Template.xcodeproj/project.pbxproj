@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		118E9D1C293499C100C5F29C /* ActorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E9D1B293499C100C5F29C /* ActorManager.swift */; };
+		118E9D1E29349AC400C5F29C /* Object-Redme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E9D1D29349AC400C5F29C /* Object-Redme.swift */; };
 		11C42AA32930BA010047D6F5 /* Workshop_TemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C42AA22930BA010047D6F5 /* Workshop_TemplateApp.swift */; };
 		11C42AA52930BA010047D6F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C42AA42930BA010047D6F5 /* ContentView.swift */; };
 		11C42AA72930BA030047D6F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C42AA62930BA030047D6F5 /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		118E9D1B293499C100C5F29C /* ActorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorManager.swift; sourceTree = "<group>"; };
+		118E9D1D29349AC400C5F29C /* Object-Redme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object-Redme.swift"; sourceTree = "<group>"; };
 		11C42A9F2930BA010047D6F5 /* Workshop-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workshop-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C42AA22930BA010047D6F5 /* Workshop_TemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workshop_TemplateApp.swift; sourceTree = "<group>"; };
 		11C42AA42930BA010047D6F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				11C42ABB2930BDEA0047D6F5 /* DataManager.swift */,
+				118E9D1B293499C100C5F29C /* ActorManager.swift */,
 				11C42ABD2930BDF60047D6F5 /* ActorsView.swift */,
 			);
 			path = Actors;
@@ -278,6 +283,7 @@
 		11C42AD32930BE930047D6F5 /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				118E9D1D29349AC400C5F29C /* Object-Redme.swift */,
 				11C42AD42930BF6C0047D6F5 /* Environment */,
 				11C42AD52930BF7B0047D6F5 /* State-Observable Object */,
 				11C42AD62930BF8A0047D6F5 /* UpdatingExampleView */,
@@ -581,12 +587,14 @@
 				11C42AC02930BE090047D6F5 /* ContinuationViewModel.swift in Sources */,
 				11C42AFA2930C1620047D6F5 /* StyleGuide.swift in Sources */,
 				11C42B1E2930C3DA0047D6F5 /* NavigationBar.swift in Sources */,
+				118E9D1E29349AC400C5F29C /* Object-Redme.swift in Sources */,
 				11C42ABC2930BDEA0047D6F5 /* DataManager.swift in Sources */,
 				11C42B222930C41F0047D6F5 /* UIView-Extension.swift in Sources */,
 				11C42B252930C4490047D6F5 /* UIImpactFeedBack-Utilities.swift in Sources */,
 				11C42ADC2930BFDA0047D6F5 /* StateObservableObjectView.swift in Sources */,
 				11C42B132930C3740047D6F5 /* QATARCard.swift in Sources */,
 				11C42ACA2930BE4C0047D6F5 /* AsyncLetViewModel.swift in Sources */,
+				118E9D1C293499C100C5F29C /* ActorManager.swift in Sources */,
 				11C42AE92930C03D0047D6F5 /* LoginView.swift in Sources */,
 				11C42B112930C36D0047D6F5 /* QATARView.swift in Sources */,
 				11C42AFE2930C1700047D6F5 /* StyleGuideView.swift in Sources */,

@@ -16,7 +16,13 @@ struct AsyncAwaitView: View {
     //  MARK: - Principal View
     var body: some View {
         ZStack {
-            
+            VStack {
+                List {
+                    ForEach(vm.data, id: \.self) { data in
+                        Text(data)
+                    }
+                }
+            }
         }
         .onAppear(perform: vm.onAppear)
     }
